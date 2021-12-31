@@ -26,6 +26,6 @@ spring:
           uri: lb://EMPRESTIMO
           predicates:
             - Path=/emprestimos/**
-    config:
-        import: "optional:configserver:"
+  config:
+    import: "optional:configserver:"
 
