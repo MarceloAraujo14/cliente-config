@@ -1,9 +1,3 @@
-spring:
-  application:
-    name: cliente
-
-  config:
-    import: "optional:configserver:"
 
 server:
   port: 8081
