@@ -25,6 +25,6 @@ spring:
         - id: emprestimo
           uri: lb://EMPRESTIMO
           predicates:
-            - Path=/emprestimos/**
+            - Path=/emprestimo/**
 
 
