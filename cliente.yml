@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: cliente
+
+  config:
+    import: "optional:configserver:"
+
+  cloud:
+    config:
+      url: http://localhost:8888
+
+#server:
+#  port: 8080
+
+eureka:
+  instance:
+    hostname: localhost
+    port: 9000
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+    server:
+      wait-time-in-ms-when-sync-empty: 3000
