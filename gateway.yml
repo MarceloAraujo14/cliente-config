@@ -11,6 +11,8 @@ eureka:
       wait-time-in-ms-when-sync-empty: 3000
       
 spring:
+  config:
+    import: "optional:configserver:"
   cloud:
     gateway:
       discovery:
@@ -26,6 +28,5 @@ spring:
           uri: lb://EMPRESTIMO
           predicates:
             - Path=/emprestimos/**
-  config:
-    import: "optional:configserver:"
+
 
