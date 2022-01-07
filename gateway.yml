@@ -22,9 +22,9 @@ spring:
           uri: lb://CLIENTE
           predicates:
             - Path=/clientes/**
-        - id: emprestimo
-          uri: lb://EMPRESTIMO
+        - id: emprestimos
+          uri: lb://EMPRESTIMOS
           predicates:
-            - Path=/emprestimo/**
+            - Path=/emprestimos/**
 
 
