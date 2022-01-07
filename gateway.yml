@@ -26,5 +26,10 @@ spring:
           uri: lb://EMPRESTIMOS
           predicates:
             - Path=/emprestimos/**
+        - id: cadastro
+          uri: lb://CADASTRO
+          predicates:
+            - Path=/cadastrar/**
+           
 
 
