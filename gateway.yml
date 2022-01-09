@@ -22,10 +22,10 @@ spring:
           uri: lb://CLIENTE
           predicates:
             - Path=/clientes/**
-        - id: emprestimos
-          uri: lb://EMPRESTIMOS
+        - id: userapp
+          uri: lb://USERAPP
           predicates:
-            - Path=/emprestimos/**
+            - Path=/**
         - id: cadastro
           uri: lb://CADASTRO
           predicates:
